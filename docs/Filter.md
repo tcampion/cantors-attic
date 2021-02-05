@@ -29,14 +29,14 @@ prime ideal partition $\\mathcal{P}(S)$ in two.
 
 Intuitively, the members of a filter are the subsets of $S$ "large"
 enough to satisfy some property. $S$ is always "large enough", while
-$\\empty$ never is. $F$ being closed under finite intersections means
+$\\emptyset$ never is. $F$ being closed under finite intersections means
 that the intersection of two large sets is still large enough - $F$'s
 sets only differ by a "too small" set. Also, $F$ being closed under the
 superset relation means that if a set $X$ contains a large enough set
 then $X$ is also large enough. For example, for any nonempty
 $X\\subseteq S$, the set of all supersets of $X$ -i.e. the set of all
 sets "larger" than $X$ - is always a filter. Similarly, the members of
-an ideal will represent the subsets of $S$ "too small"; $\\empty$ is
+an ideal will represent the subsets of $S$ "too small"; $\\emptyset$ is
 always too small, $S$ never is, the union of two too small sets is still
 too small and if a set is contained (as a subset) in a too small set,
 then it is itself too small.
@@ -51,7 +51,7 @@ then it is itself too small.
 A set $F\\subseteq\\mathcal{P}(S)$ is a *filter* on $S$ if it satisfies
 the following properties:
 
--   $\\empty\\not\\in F$ (proper filter), $S\\in F$
+-   $\\emptyset\\not\\in F$ (proper filter), $S\\in F$
 -   $X\\cap Y\\in F$ whenever $X,Y\\in F$ (finite intersection property)
 -   $Y\\in F$ whenever $X\\subseteq Y\\subseteq S$ and $X\\in F$ (upward
     closed / closed under supersets)
@@ -59,7 +59,7 @@ the following properties:
 A set $I\\subseteq\\mathcal{P}(S)$ is an *ideal* on $S$ if it satisfies
 the following properties:
 
--   $S\\not\\in I$, $\\empty\\in I$
+-   $S\\not\\in I$, $\\emptyset\\in I$
 -   $X\\cup Y\\in F$ whenever $X,Y\\in I$ (finite union property)
 -   $Y\\in I$ whenever $Y\\subseteq X\\subseteq S$ and $X\\in I$
     (downard closed / closed under subsets)
@@ -71,7 +71,7 @@ are not equal, their duals aren't equal either.
 A filter $F$ is *trivial* if $F=\\{S\\}$. It is *principal* if there
 exists $X\\subseteq S$ such that $Y\\in F$ if and only if $X\\subseteq
 Y$. Every nonempty subset $X\\subseteq S$ has an associated principal
-filter. Similarly, the trivial ideal is $I=\\{\\empty\\}$, and an ideal
+filter. Similarly, the trivial ideal is $I=\\{\\emptyset\\}$, and an ideal
 is principal if there exists $X\\subseteq S$ such that $Y\\in I$ if and
 only if $Y\\subseteq X$. A filter (resp. ideal) is *uniform* if it only
 contains sets of the same cardinality.
@@ -328,7 +328,7 @@ $\[\\kappa\]^\\kappa$.
 Consider the following infinite game $\\mathcal{G}\_I$: two players,
 Empty and Nonempty, alternatively choose sets $S\_n$ such that
 $S\_n\\not\\in I$ and $S\_{n+1}\\subseteq S\_n$. Empty plays first and
-wins if $\\bigcap^\\infty\_{n=0}S\_n=\\empty$.
+wins if $\\bigcap^\\infty\_{n=0}S\_n=\\emptyset$.
 
 Assume $I$ contains all singleton. Let $S$ be a set not in $I$. An
 *$I$-partition* of $S$ is a maximal family $W$ of subsets of $S$
@@ -391,9 +391,9 @@ Filters are related to the concept of *measures*.
 Let $\|S\|\\geq\\aleph\_0$. A (nontrivial $\\sigma$-additive) *measure*
 on $S$ is a function $\\mu:\\mathcal{P}(S)\\to\[0,+\\infty\]$ such that:
 
--   $\\mu(\\empty)=0$, $\\mu(S)&gt;0$
+-   $\\mu(\\emptyset)=0$, $\\mu(S)&gt;0$
 -   $\\mu(X)\\leq\\mu(Y)$ whenever $X\\subseteq Y$
--   Let $\\{X\_n : n&lt;\\omega\\}$ such that $X\_i\\cap X\_j=\\empty$
+-   Let $\\{X\_n : n&lt;\\omega\\}$ such that $X\_i\\cap X\_j=\\emptyset$
     whenever $i&lt;j$, then
     $\\mu(\\bigcup\_{n&lt;\\omega}X\_n)=\\sum\_{n=0}^{\\infty}\\mu(X\_n)$
 
@@ -402,7 +402,7 @@ there exists a set $A$ of positive measure, i.e. $\\mu(A)&gt;0$, since
 we required $\\mu(S)&gt;0$.
 
 $\\mu$ is $\\theta$-additive if $\\{X\_\\alpha : \\alpha&lt;\\lambda\\}$
-with $\\lambda&lt;\\theta$ is such that $X\_i\\cap X\_j=\\empty$
+with $\\lambda&lt;\\theta$ is such that $X\_i\\cap X\_j=\\emptyset$
 whenever $i&lt;j$, then
 $\\mu(\\bigcup\_{\\alpha&lt;\\lambda}X\_\\alpha)=\\sum\_{\\alpha&lt;\\lambda}\\mu(X\_\\alpha)$.
 Every measure $\\mu$ is $\\omega\_1$-additive (i.e. countably additive /
